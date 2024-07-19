@@ -1,0 +1,16 @@
+/* CSS Reset */
+* {
+    margin:0;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+
+/* Body Work  */
+
+
+
+/* Navigation Section  */
+#navigationbar #logo1 img{
+    height: 50px;
+}
