@@ -11,6 +11,9 @@
 
 
 /* Navigation Section  */
+#navigationbar{
+    background-color: black;
+}
 #navigationbar #logo1 img{
     height: 50px;
 }
