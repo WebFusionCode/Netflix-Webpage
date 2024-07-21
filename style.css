@@ -12,8 +12,107 @@
 
 /* Navigation Section  */
 #navigationbar{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.158);
+    height: 95px;
+    backdrop-filter: blur(2px);
+}
+#navigationbar .navbar ul li{
+    position: relative;
+    top: 16px;
+    left: -50px;
+    list-style: none;
+
+}
+#navigationbar .navbar ul li a{
+    position: relative;
+    left: -100px;
+    padding: 30px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+#navigationbar .navbar select{
+    position: relative;
+    left: -130px;
+    top: -2px;
+    border: none;
+    background: none;
+    color: white;
+}
+#navigationbar .navbar select:focus{
+   outline: none;
 }
 #navigationbar #logo1 img{
     height: 50px;
+    position: relative;
+    top: 18px;
+    left: 100px;
+}
+#navigationbar #logo2 img{
+    position: relative;
+    height: 50px;
+    top: 16px;
+    border-radius: 100%;
+    filter: invert(100%);
+    left: -70px;
+}
+#navigationbar .navbar{
+    display: flex;
+    justify-content: right;
+    align-items:end ;
+    position: relative;
+    top: -60px;
+}
+#navigationbar .navbar #icons1{
+   display: block;
+   position: relative;
+   padding: 10px;
+   padding: 10px;
+   top: 16px;
+   left: -100px;
+}
+#navigationbar .navbar #icons1 input{   
+    display: block;
+    position: relative;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.233);
+    color: white;
+    padding: 3px;
+    margin: 2px;
+    width: 250px;
+    border: none;
+    text-align: center;
+}
+#navigationbar .navbar #icons1 input:focus{   
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.233);
+    backdrop-filter: blur(10px);
+
+}
+#navigationbar .navbar #icons1 input::placeholder{   
+    text-align: center;
+    color: white;
+}
+#navigationbar .navbar #icons2 img{
+
+    position: relative;
+    top: 10px;
+    height: 25px;
+    left: -100px;
+    margin: 10px;
+    border-radius: 20px;
+
+}
+/* Home Section  */
+#home{
+    position: absolute;
+    top: -100px;
+    z-index: -1;
+}
+#next1{
+    position: relative;
+    top: -100px;
+    left: 200px;
+
 }
