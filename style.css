@@ -15,7 +15,7 @@
     background-color: rgba(0, 0, 0, 0);
     border-bottom: 1px solid rgba(255, 255, 255, 0.158);
     height: 95px;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(1px);
 }
 #navigationbar .navbar ul li{
     position: relative;
@@ -76,7 +76,8 @@
     display: block;
     position: relative;
     border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.233);
+    background-color: rgba(0, 0, 0, 0);
+    border: white;
     color: white;
     padding: 3px;
     margin: 2px;
@@ -86,6 +87,8 @@
 }
 #navigationbar .navbar #icons1 input:focus{   
     outline: none;
+    border: white;
+
     background-color: rgba(0, 0, 0, 0.233);
     backdrop-filter: blur(10px);
 
@@ -110,9 +113,76 @@
     top: -100px;
     z-index: -1;
 }
-#next1{
+#home #background img{
+    position: absolute;
+    top: -150px;
+    z-index:-1;
+    height: 800px;
+    width: 1366px;
+    opacity: 1;
+}
+.h-primary{
+    display: block;
     position: relative;
-    top: -100px;
-    left: 200px;
+    top: 300px;
+    left:80px;
+    font-weight: bold;
+    width: 400px;
+    color: black;
+    backdrop-filter: blur(1px);
+    
+    
+}
+.p-primary{
+    display: block;
+    position: relative;
+    top: 300px;
+    left:80px;
+    font-weight: bold;
+    width: 400px;
+    color: black;
+    backdrop-filter: blur(1px);
+    border-radius: 100px;
 
+}
+.button1{
+    position: relative;
+    top: 300px;
+    left: 80px;
+    width: 130px;
+    height: 35px;
+    border-radius: 100px;
+    background-color: #f1f1f1;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 18px;
+    font-weight:600;
+
+}
+.button1:hover{
+    background-color: rgb(255, 0, 0);
+    box-shadow: 1px 0px 20px 3px red;
+}
+#main{
+    position: relative;
+    top: 450px;
+    height: 300px;
+    background-color: black;
+    display: grid;
+    /* grid-template-columns: 1fr 3fr 1fr; */
+    /* grid-template-columns: repeat(4, auto); */
+    /* grid-template-columns: 100px 200px 300px 400px 500px; */
+    grid-gap: 10px;
+
+}
+.box{
+    background-color: aqua;
+    border: 2px solid white;
+
+
+}
+.box:first-child{
+    grid-column: 1 / 2 span;
+    grid-row: 1 / 2 span;
 }
