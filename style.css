@@ -32,6 +32,26 @@
     color: rgb(255, 255, 255);
 
 }
+#navigationbar .navbar ul li a::after{
+    content: '';
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    width: 10px; 
+    height: 10px; 
+    background-color: #ff0000;
+    border-radius: 50%; 
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+
+}
+#navigationbar .navbar ul li a:hover::after{
+    opacity: 1;
+    box-shadow: 0 0 15px 10px rgba(255, 0, 0, 0.5);
+}
+
+
 #navigationbar .navbar select{
     position: relative;
     left: -130px;
@@ -78,24 +98,33 @@
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0);
     border: white;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 3px;
     margin: 2px;
     width: 250px;
     border: none;
     text-align: center;
 }
+#navigationbar .navbar #icons1 input:hover{
+    box-shadow: 0px 0px 30px 8px red;   
+   
+}
 #navigationbar .navbar #icons1 input:focus{   
     outline: none;
     border: white;
-
-    background-color: rgba(0, 0, 0, 0.233);
+    background-color: rgba(255, 255, 255, 0.87);
     backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 30px 8px red;;
 
 }
+
 #navigationbar .navbar #icons1 input::placeholder{   
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+#navigationbar .navbar #icons1 input:focus::placeholder{   
+    color: rgb(0, 0, 0);
 }
 #navigationbar .navbar #icons2 img{
 
@@ -214,13 +243,18 @@
     height: 20px;
     position: relative;
     left: 0px;    
-    
+    filter: invert(15%);
+    transition: 0.70s ease-in-out;
  }
  .gridcontainer .items h6{
     margin: 40px;
     position: relative;
     left: -34px;
     color: rgba(255, 255, 255, 0.685);
+    transition: 0.70s ease-in-out;
+ }
+ .gridcontainer .items img:hover, h6:hover{
+    transform: scale(1.5);
  }
  #horizontal{
     position: relative;
@@ -228,4 +262,17 @@
     margin: 0px 60px;
     border: 2px solid rgba(255, 255, 255, 0.315);
     
+ }
+
+ /* Button Grid Section  */
+ #buttongrid{
+    position: relative;
+    top: -170px;
+    left: -60px;
+ }
+ #buttongrid .button2{
+    margin: 10px;
+ }
+ .button3{
+    background-color: rgb(255, 0, 0);
  }
